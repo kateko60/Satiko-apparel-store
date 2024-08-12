@@ -1,0 +1,123 @@
+/****************/
+/*font classes***/
+ .athiti-regular {
+    font-family: "Athiti", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  body{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Athiti", sans-serif;
+  }
+  .nav-menu{
+    display: flex;
+    padding: 0px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 4px 1px 4px #b0afaf;
+  }
+  .nav-menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .nav-menu li{
+    padding: 30px 15px;
+  }
+  .nav-menu img{
+    width: 250px;
+  }
+  .nav-menu li:not(:nth-child(3)):hover{
+    cursor: pointer;
+    border-bottom: 1px solid #bcbcbc;
+    font-size: 105%;
+    color: #bcbcbc;
+  }
+  .nav-menu li:not(:nth-child(3)):active{
+    color: #744700;
+  }
+
+  /**************/
+  /*Image slide*/
+.image-slider{
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.slider img{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: none;
+}
+img.displaySlider{
+  display: block;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.slider ul{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+.slider li{
+  border: 2px solid #bcbcbc;
+  border-radius: 30%;
+  padding: 10px;
+  margin-left: 5px;
+}
+.scroll-el1{
+  position: absolute;
+  cursor: pointer;
+  transform: translateY(-210px);
+  left: 48%;
+  text-align: center;
+}
+.slider .fa-arrow-down-long{
+  color: #660000;
+  animation: bounce 1s 1s infinite ease-out;
+}
+.slider .fa-arrow-down-long:hover{
+  color: #744700;
+}
+.slider .fa-arrow-down-long:active{
+  color: #744700;
+  border-color: #6fa8dc;
+}
+
+/*****************/
+/***ANIMATIONS***/
+
+@keyframes fade{
+  from{opacity: .5}
+  to{opacity: 1}
+}
+@keyframes bounce{
+  0%{
+    transform: translateY(10%);
+  }
+  40%{
+    transform: translateY(20%);
+  }
+  60%{
+    transform: translateY(40%);
+  }
+  80%{
+    transform: translateY(20%);
+  }
+  100%{
+      transform: translateY(10%);
+    }
+  }
+
+
+/*******************/
+/*slider elements**/
