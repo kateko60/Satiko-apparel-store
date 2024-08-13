@@ -33,3 +33,15 @@ function nextSlide(){
     slideindex--;
     showSlide(slideindex);
    }  
+
+
+   /*****Scroll to product animation*/
+   SmoothScroll();
+   let scrollProd = document.getElementById("long");
+   let displayView = document.getElementById("products-after-scroll");
+   function SmoothScroll(){
+        scrollProd.onclick = function(){
+             displayView.style.display = "flex";
+        }
+   }
+ 
